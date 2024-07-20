@@ -1,0 +1,417 @@
+.float-example {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background-color: #ffa6fc;
+    border: 1px solid #000000;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #ffd3fd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: float-animation 5s infinite alternate;
+}
+
+.float-example:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px #ffbff4;
+}
+
+.float-container {
+    overflow: hidden;
+    padding: 10px;
+    background-color: #ffddef;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px #ffffff;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.float-container:hover {
+    background-color: #ffbfff;
+    box-shadow: 0 4px 8px #ffdcf6;
+}
+
+@keyframes float-animation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .float-example {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .float-example {
+        float: none;
+        width: 85%;
+        margin: 5px auto;  
+    }
+}
+
+/* Estilos del tooltip */
+.tooltip {
+    position: center; /* Posición central */
+    display: inline-block; /* Mostrar como bloque en línea */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden; /* Ocultar el tooltip por defecto */
+    width: 200px; /* Ancho del tooltip */
+    background-color: black; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Alineación centrada */
+    border-radius: 6px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    position: absolute; /* Posición absoluta */
+    z-index: 1; /* Colocar sobre otros elementos */
+    bottom: 300%; /* Posición del tooltip debajo del elemento */
+    left: 50%; /* Centrado horizontalmente */
+    margin-left: -100px; /* Ajuste horizontal */
+    opacity: 0; /* Opacidad inicial */
+    transition: opacity 0.3s; /* Transición suave de opacidad */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible; /* Hacer visible el tooltip al pasar el ratón */
+    opacity: 1; /* Opacidad al 100% */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Cambia a diseño de bloque */
+        text-align: center; /* Alineación centrada */
+        margin: 10px 0; /* Margen superior e inferior */ 
+    }
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para el encabezado */
+header h1 {
+    font-family: 'Verdana', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+body {
+    background-image: url('images/bpback.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #fff;
+    color: #940000; /* Texto blanco */
+    padding: 2rem; /* Espaciado interno */
+    text-align: center; /* Alineación centrada */
+}
+footer {
+    background-color: #ffffff; /* Fondo rosa intenso */
+    color: rgb(255, 168, 241); /* Texto blanco */
+    text-align: center; /* Alineación centrada */
+    padding: 10px 0; /* Espaciado interno arriba y abajo */
+    margin-top: 20px; /* Margen superior */
+}
+.border-example {
+    border: 5px solid #ffa6fc;
+    border-radius: 25px 10px 25px 10px;
+    border-style: double;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 15px #ffa6fc;
+}
+.nosotros-foto {
+    display: block; /* Mostrar como bloque */
+    margin: 70px auto; /* Margen con auto en los lados */
+    margin: 0px;
+    max-width: 100%; /* Ancho máximo de la imagen */
+    border-bottom: 100%; /* Borde inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+.biografic {
+    position: relative; /* Añadir posición relativa para el contenedor */
+    border-radius: 8px;
+    max-width: 45%;
+    display: inline-block;
+    height: 300px; /* Especifica la altura deseada aquí */
+    margin: 50px auto; 
+    margin-left: 60px;
+    overflow: hidden;
+    box-shadow: 0 5px 10px #ffa6fc;
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    transition: transform 0.3s, background-color 0.3s;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
+}
+
+.biografic:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.biografic img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd; 
+}
+
+.biografic p:last-child {
+    font-weight: bold;
+}
+.biografic h2 {
+    font-size: 2.5rem; /* Tamaño de fuente */
+    color: #ff69b4; /* Rosa oscuro */
+    margin: 1rem 2rem; /* Margen superior e inferior */
+}
+
+/* Estilos de los párrafos de los productos */
+.biografic p {
+    display: block;
+    font-size: 1.5rem;
+    margin: 0.5rem 0; /* Margen superior e inferior */
+    color: #ff0080; /* Rosa intenso */
+}
+.initial-text {
+    font-size: 3rem; /* Tamaño de la fuente del texto inicial */
+    color: #000000; /* Color del texto inicial */
+    text-align: center; /* Centrar el texto inicial */
+    position: absolute; /* Colocar en una posición específica */
+    top: 50%; /* Centrar verticalmente */
+    left: 25%;
+}
+.overlay {
+    position: absolute; /* Posición absoluta para superponerse al contenedor */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    z-index: 1; /* Asegúrate de que el overlay esté por encima del contenido */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
+}
+
+.biografic:hover .overlay {
+    opacity: 1; 
+}
+.container-icon {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.container-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos para la lista del carrito */
+#cart-list {
+    background-color: #ffa6fc; /* Rosa */
+    border: 5px solid #ffa6fc;
+    border-radius: 25px 10px 25px 10px;
+    border-style: double;
+    color: #000; /* Negro */
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que la lista esté sobre otros elementos */
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    background-color: #fff;
+    border: 5px solid #ffa6fc;
+    border-radius: 25px 10px 25px 10px;
+    border-style: double;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items li button {
+    background-color: #ff69b4; /* Negro */
+    color: #fff;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cart-items li button:hover {
+    background-color: #444;
+}
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border: 5px solid #fc5ef6;
+    border-radius: 25px 10px 25px 10px;
+    border-style: double;
+    color: #fc5ef6;
+    cursor: pointer;
+}
+.search-container {
+    display: flex;
+    margin-left: 1050px;
+    align-items: center;
+}
+
+/* Estilo para el formulario de búsqueda */
+#search-form {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para el campo de entrada del buscador */
+#search-input {
+    padding: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    transition: border-color 0.3s;
+}
+
+#search-input:focus {
+    border-color: #ff69b4;
+    outline: none;
+}
+
+#search-form button {
+    background-color: #ff69b4; /* Color del botón */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px;
+    transition: background-color 0.3s;
+}
+
+#search-form button:hover {
+    background-color: #ff1493; /* Color al pasar el ratón */
+}
+#search-results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-title {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.product-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-price {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-link {
+    text-decoration: none;
+    color: #ff4081;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.product-link:hover {
+    text-decoration: underline;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-item h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-item p {
+    margin: 5px 0;
+}

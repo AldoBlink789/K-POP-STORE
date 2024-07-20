@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>.</h1> <!-- Título principal -->
+        <button class="container-icon">
+            <img src="../images/carrito-removebg-preview.png" class="icono">
+        </button>
+        <div class="cart-list" id="cart-list">
+            <ul id="cart-items">
+                <!-- Los productos añadidos aparecerán aquí -->
+            </ul>
+            <button id="proceed-button" class="button">
+                <p>Proceder al pago</p>
+            </button>            
+        </div>
+        <nav> 
+            <ul class="float-container border-example"> <!--Nuevo estilo float container !-->
+                <li class="float-example border-example"><a href="../index.html">Inicio</a></li>
+                <li class="float-example border-example"><a href="BLACKPINK.html">BLACKPINK</a></li>
+                <li class="float-example border-example"><a href="../gd/(G)I-DLE.html">(G)I-DLE</a></li>
+                <li class="float-example border-example"><a href="../tw/Twice.html">Twice</a></li>
+                <li class="float-example border-example"><a href="sobre nosotros.html">Sobre nosotros</a></li>
+                <li class="float-example border-example"><a href="contacto.html">Contacto</a></li>
+                <li class="float-example border-example"><a href="../carrusel/carrusel.html">Proximamente...</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- Contenido principal de la página -->
+        <section class="product-list"> <!-- Sección de lista de productos -->
+            <article class="product-item border-example"> <!-- Artículo de producto 1 -->
+                <a href="../productos/producto1.html"><img src="../images/producto1.jpg" alt="Producto 1"></a> <!-- Imagen del producto 1 con un enlace -->
+                <h2>Squeare Up-Album</h2> <!-- Título del producto 1 -->
+                <p>Square Up Album completo, incluye photocards.</p> <!-- Descripción del producto 1 -->
+                <p>Precio: s/115.00</p> <!-- Precio del producto 1 -->
+            </article>
+            <article class="product-item border-example"> <!-- Artículo de producto 2 -->
+                <a href="../productos/producto2.html"><img src="../images/producto2.jpg" alt="Producto 2"></a> <!-- Imagen del producto 2 con un enlace -->
+                <h2>Lightick BLACKPINK vr.2</h2> <!-- Título del producto 2 -->
+                <p>Lightick BLACKPINK vr.2 bluetooth conexion.</p> <!-- Descripción del producto 2 -->
+                <p>Precio: s/280.00</p> <!-- Precio del producto 2 -->
+            </article>
+            <article class="product-item border-example"> <!-- Artículo de producto 3 -->
+                <a href="../productos/producto3.html"><img src="../images/producto3.jpg" alt="Producto 3"></a> <!-- Imagen del producto 3 con un enlace -->
+                <h2>BLACKPINK - THE GAME OST THE GIRLS</h2> <!-- Título del producto 3 -->
+                <p>BLACKPINK - THE GAME OST THE GIRLS ver. STELLA</p> <!-- Descripción del producto 3 -->
+                <p>Precio: s/280.00</p> <!-- Precio del producto 3 -->
+            </article>
+            <article class="product-item border-example"> <!-- Artículo de producto 4 -->
+                <a href="../productos/producto4.html"><img src="../images/producto4.jpg" alt="Producto 4"></a> <!-- Imagen del producto 4 con un enlace -->
+                <h2>BLACKPINK - Cereal</h2> <!-- Título del producto 4 -->
+                <p>BLACKPINK - DEBUT ANNIVERSARY CEREAL DECO KIT 2023</p> <!-- Descripción del producto 4 -->
+                <p>Precio: s/150.00</p> <!-- Precio del producto 4 -->
+            </article>
+        </section>
+        <button class="biografic border-example" onclick="location.href='bio.html';"> 
+            <div class="overlay">
+                <a href="bio.html"></a> 
+                <p>Biografia</p>
+            </div>
+        </button>
+    </main>
+    <footer> <!-- Pie de página -->
+        <p>&copy; 2024 Nuestra Tienda. Todos los derechos reservados.</p> <!-- Texto de derechos de autor -->
+    </footer>
+    <script src="../productos/compra.js"></script>
+</body>
+</html>

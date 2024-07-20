@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Productos</title>
+    <link rel="stylesheet" href="styleT.css">
+</head>
+<body>
+    <header>
+        <h1>.</h1> <!-- Título principal -->
+        <button class="container-icon">
+            <img src="../images/carrito-removebg-preview.png" class="icono">
+        </button>
+        <div class="cart-list" id="cart-list">
+            <ul id="cart-items">
+                <!-- Los productos añadidos aparecerán aquí -->
+            </ul>
+            <button id="button" class="button" onclick="location.href='../productos/comprar.html';">
+                <p>Proceder al pago</p>
+                <a href="../productos/comprar.html"></a>
+            </button>
+        </div>
+        <nav>
+            <ul class="float-container border-example">
+                <li class="float-example border-example"><a href="../index.html">Inicio</a></li>
+                <li class="float-example border-example"><a href="../bp/BLACKPINK.html">BLACKPINK</a></li>
+                <li class="float-example border-example"><a href="../gd/(G)I-DLE.html">(G)I-DLE</a></li>
+                <li class="float-example border-example"><a href="Twice.html">Twice</a></li>
+                <li class="float-example border-example"><a href="../bp/sobre nosotros.html">Sobre nosotros</a></li>
+                <li class="float-example border-example"><a href="../bp/contacto.html">Contacto</a></li>
+                <li class="float-example border-example"><a href="../carrusel/carrusel.html">Proximamente...</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main> <!-- Contenido principal de la página -->
+        <section class="product-list"> <!-- Sección de lista de productos -->
+            <article class="product-item border-example"> <!-- Artículo de producto 1 con borde -->
+                <a href="../productos/Tproducto1.html"><img src="../images/Tproducto1.jpg" alt="Producto 1"></a> <!-- Imagen del producto 1 con un texto alternativo -->
+                <h2>TWICE - Lightstick</h2> <!-- Título del producto 1 -->
+                <p>TWICE - Lightstick CANDYBONG INFINITY</p> <!-- Descripción del producto 1 -->
+                <p>Precio: s/299.00 </p> <!-- Precio del producto 1 -->
+            </article>
+            <article class="product-item border-example"> <!-- Artículo de producto 2 con borde -->
+                <a href="../productos/Tproducto2.html"><img src="../images/Tproducto2.jpg" alt="Producto 2"></a> <!-- Imagen del producto 2 con un texto alternativo -->
+                <h2>TWICE NEWS ROOM</h2> <!-- Título del producto 2 -->
+                <p>TWICE SEASON’S GREETINGS (TWICE NEWS ROOM) 2024</p> <!-- Descripción del producto 2 -->
+                <p>Precio: s/249.00</p> <!-- Precio del producto 2 -->
+            </article>
+            <article class="product-item border-example"> <!-- Artículo de producto 3 con borde -->
+                <a href="../productos/Tproducto3.html"><img src="../images/Tproducto3.jpg" alt="Producto 3"></a> <!-- Imagen del producto 3 con un texto alternativo -->
+                <h2>TWICE - WHAT IS LOVE?</h2> <!-- Título del producto 3 -->
+                <p>TWICE - WHAT IS LOVE? - Album</p> <!-- Descripción del producto 3 -->
+                <p>Precio: s/119.00</p> <!-- Precio del producto 3 -->
+            </article>
+            <article class="product-item border-example"> <!-- Artículo de producto 4 con borde -->
+                <a href="../productos/Tproducto4.html"><img src="../images/Tproducto4.jpg" alt="Producto 4"></a> <!-- Imagen del producto 4 con un texto alternativo -->
+                <h2>IM NAYEON - Album</h2> <!-- Título del producto 4 -->
+                <p>TWICE: NAYEON - IM NAYEON</p> <!-- Descripción del producto 4 -->
+                <p>Precio: s/120.00</p> <!-- Precio del producto 4 -->
+            </article>
+        </section>
+        <button class="biografic border-example" onclick="location.href='bioT.html';"> 
+            <div class="overlay">
+                <p>Biografía</p>
+            </div>
+        </button>        
+    </main>
+    <footer> <!-- Pie de página -->
+        <p>&copy; 2024 Nuestra Tienda. Todos los derechos reservados.</p> <!-- Texto de derechos de autor -->
+    </footer>
+    <script src="../productos/compra.js"></script>
+</body>
+</html>

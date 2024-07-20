@@ -1,0 +1,159 @@
+.float-example {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background-color: #ffa6fc;
+    border: 1px solid #000000;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #ffd3fd;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: float-animation 5s infinite alternate;
+}
+
+.float-example:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px #ffbff4;
+}
+
+.float-container {
+    overflow: hidden;
+    padding: 10px;
+    background-color: #ffddef;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px #ffffff;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.float-container:hover {
+    background-color: #ffbfff;
+    box-shadow: 0 4px 8px #ffdcf6;
+}
+
+@keyframes float-animation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .float-example {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .float-example {
+        float: none;
+        width: 85%;
+        margin: 5px auto;  
+    }
+}
+
+/* Estilos del tooltip */
+.tooltip {
+    position: center; /* Posición central */
+    display: inline-block; /* Mostrar como bloque en línea */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden; /* Ocultar el tooltip por defecto */
+    width: 200px; /* Ancho del tooltip */
+    background-color: black; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Alineación centrada */
+    border-radius: 6px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    position: absolute; /* Posición absoluta */
+    z-index: 1; /* Colocar sobre otros elementos */
+    bottom: 300%; /* Posición del tooltip debajo del elemento */
+    left: 50%; /* Centrado horizontalmente */
+    margin-left: -100px; /* Ajuste horizontal */
+    opacity: 0; /* Opacidad inicial */
+    transition: opacity 0.3s; /* Transición suave de opacidad */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible; /* Hacer visible el tooltip al pasar el ratón */
+    opacity: 1; /* Opacidad al 100% */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Cambia a diseño de bloque */
+        text-align: center; /* Alineación centrada */
+        margin: 10px 0; /* Margen superior e inferior */ 
+    }
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilo para el encabezado */
+header h1 {
+    font-family: 'Verdana', sans-serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+}
+body {
+    background-image: url('../images/bpback.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen de fondo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #fff;
+    color: #940000; /* Texto blanco */
+    padding: 2rem; /* Espaciado interno */
+    text-align: center; /* Alineación centrada */
+}
+footer {
+    background-color: #ffffff; /* Fondo rosa intenso */
+    color: rgb(255, 168, 241); /* Texto blanco */
+    text-align: center; /* Alineación centrada */
+    padding: 10px 0; /* Espaciado interno arriba y abajo */
+    margin-top: 20px; /* Margen superior */
+}
+.border-example {
+    border: 5px solid #ffa6fc;
+    border-radius: 25px 10px 25px 10px;
+    border-style: double;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 15px #ffa6fc;
+}
+.float-container {
+    overflow: hidden;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px #ffa6fc;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página web</title>
+    <link rel="stylesheet" href="styledecomprea.css">
+</head>
+<body>
+    <header class="border-example">
+        <h1>K-POP STORE</h1>
+        <nav>
+            <ul class="float-container">
+                <li class="float-example border-example"><a href="../index.html">Inicio</a></li>
+                <li class="float-example border-example"><a href="../bp/BLACKPINK.html">BLACKPINK</a></li>
+                <li class="float-example border-example"><a href="../gd/(G)I-DLE.html">(G)I-DLE</a></li>
+                <li class="float-example border-example"><a href="../tw/Twice.html">Twice</a></li>
+                <li class="float-example border-example"><a href="../bp/sobre nosotros.html">Informacion</a></li>
+                <li class="float-example border-example"><a href="../bp/contacto.html">Contacto</a></li>
+                <li class="float-example border-example"><a href="../carrusel/carrusel.html">Proximamente...</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="float-container border-example">
+            <h2>Formulario de Compra</h2>
+            <form class="purchase-form">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+                
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br><br>
+                
+                <label for="tarjeta">Número de tarjeta:</label>
+                <input type="text" id="tarjeta" name="tarjeta" required><br><br>
+                
+                <input type="submit" value="Confirmar" class="border-example">
+            </form>
+        </div>
+        
+        <div id="purchase-details" class="float-container border-example">
+            <h2>Detalles de la Compra</h2>
+            <ul id="purchase-list"></ul>
+        </div>
+    </main>
+    
+    <footer class="border-example">
+        <p>&copy; 2024 Mi página web. Todos los derechos reservados.</p>
+    </footer>
+    <script src="compra.js"></script>
+    <script src="compform.js"></script>
+</body>
+</html>

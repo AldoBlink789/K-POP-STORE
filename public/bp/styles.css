@@ -1,0 +1,451 @@
+/* Estilos generales */
+body {
+    background-image: url('../images/fondoB.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #ff8cc5; /* Rosa intenso */
+    background-image: url('../images/K-POP\ STORE.png'); /* Ruta de la imagen de fondo */
+    background-size: 15%; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: 50% -12%; /* Centra la imagen de fondo */
+    color: #940000; /* Texto blanco */
+    padding: 1rem; /* Espaciado interno */
+    text-align: center; /* Alineación centrada */
+}
+
+/* Estilos de la lista de productos */
+.product-list {
+    display: flex; /* Diseño en fila */
+    flex-wrap: wrap; /* Envuelve los elementos */
+    justify-content: center; /* Alinea al centro */
+    padding: 1rem; /* Espaciado interno */
+}
+
+/* Estilos de cada ítem de producto */
+.product-item {
+    background-color: #fff; /* Blanco */
+    border: 1px solid #ffb6c1; /* Rosa claro */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 1rem; /* Margen exterior */
+    padding: 1rem; /* Espaciado interno */
+    width: 10px; /* Ancho fijo */
+    box-shadow: 0 2px 5px rgba(255, 182, 193, 0.5); /* Sombra rosa claro */
+}
+
+/* Estilos de las imágenes de los productos */
+.product-item img {
+    max-width: 10%; /* Ancho máximo del contenedor */
+    border-radius: 5px 5px 0 0; /* Bordes redondeados solo arriba */
+}
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    transition: color 0.3s, text-shadow 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff1493;
+    text-shadow: 2px 2px 4px rgb(252, 136, 236);
+}
+
+/* Estilo para el encabezado */
+header h1 {
+    font-family: 'Verdana', sans-serif;
+    color: #fc87c1;
+    text-shadow: 2px 2px 4px rgba(255, 153, 241, 0.993);
+    margin-bottom: 20px;
+}
+
+/* Estilo para los artículos */
+.product-item h2 {
+    font-size: 1.5rem; /* Tamaño de fuente */
+    color: #ff69b4; /* Rosa oscuro */
+    margin: 0.5rem 0; /* Margen superior e inferior */
+}
+
+/* Estilos de los párrafos de los productos */
+.product-item p {
+    margin: 0.5rem 0; /* Margen superior e inferior */
+    color: #ff69b4; /* Rosa intenso */
+}
+
+/* Estilos para los contenedores flotantes */
+.float-example {
+    float: left;
+    width: 10%;
+    padding: 10px;
+    background-color: #ffa6fc;
+    border: 1px solid #000000;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px #050505;
+    transition: transform 0.3s, box-shadow 0.3s;
+    animation: float-animation 5s infinite alternate;
+}
+
+.float-example:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px #050505;
+}
+
+.float-container {
+    overflow: hidden;
+    padding: 10px;
+    background-color: #ff69b4;
+    border-radius: 20px;
+    box-shadow: 0 2px 4px #050505;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.float-container:hover {
+    background-color: #000000;
+    box-shadow: 0 4px 8px #050505;
+}
+
+@keyframes float-animation {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-5px);
+    }  
+}
+
+@media screen and (max-width: 768px) {
+    .float-example {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .float-example {
+        float: none;
+        width: 85%;
+        margin: 5px auto;  
+    }
+}
+
+/* Estilos del tooltip */
+.tooltip {
+    position: center; /* Posición central */
+    display: inline-block; /* Mostrar como bloque en línea */
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden; /* Ocultar el tooltip por defecto */
+    width: 200px; /* Ancho del tooltip */
+    background-color: black; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    text-align: center; /* Alineación centrada */
+    border-radius: 6px; /* Bordes redondeados */
+    padding: 5px; /* Espaciado interno */
+    position: absolute; /* Posición absoluta */
+    z-index: 1; /* Colocar sobre otros elementos */
+    bottom: 300%; /* Posición del tooltip debajo del elemento */
+    left: 50%; /* Centrado horizontalmente */
+    margin-left: -100px; /* Ajuste horizontal */
+    opacity: 0; /* Opacidad inicial */
+    transition: opacity 0.3s; /* Transición suave de opacidad */
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible; /* Hacer visible el tooltip al pasar el ratón */
+    opacity: 1; /* Opacidad al 100% */
+}
+
+/* Estilos específicos para pantallas pequeñas */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Cambia a diseño de bloque */
+        text-align: center; /* Alineación centrada */
+        margin: 10px 0; /* Margen superior e inferior */ 
+    }
+}
+
+    /* Estilos de la foto del profesor */
+.profesor-foto {
+    display: block; /* Mostrar como bloque */
+    margin: 20px auto; /* Margen con auto en los lados */
+    max-width: 10000px; /* Ancho máximo de la imagen */
+    border-bottom: 100%; /* Borde inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos de la foto del nosotros */
+.nosotros-foto {
+    display: block; /* Mostrar como bloque */
+    margin: 70px auto; /* Margen con auto en los lados */
+    max-width: 10000px; /* Ancho máximo de la imagen */
+    border-bottom: 100%; /* Borde inferior */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.product-item {
+    background-color: #f8bcf6;
+    border: 1px solid #f88bf4;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    width: calc(25% - 1rem); /* 50% width minus the gap */
+    box-shadow: 0 5px 10px #ffa6fc;
+    transition: transform 0.3s;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    max-width: 100%;
+    border-bottom: 1px solid #ddd; 
+}
+
+.product-item p:last-child {
+    font-weight: bold;
+}
+form {
+    background-color: #f8bcf6;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 270px;
+}
+
+/* Etiquetas de los campos */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Campos de entrada */
+form input[type="text"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Botón de envío */
+form input[type="submit"] {
+    background-color: #ff1493;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+form input[type="submit"]:hover {
+    background-color: #000000;
+}
+footer {
+    background-color: #ff1493; /* Fondo rosa intenso */
+    color: white; /* Texto blanco */
+    text-align: center; /* Alineación centrada */
+    padding: 10px 0; /* Espaciado interno arriba y abajo */
+    margin-top: 20px; /* Margen superior */
+}
+
+/* Estilos de la biografía */
+/* Estilos para las biografías de BLACKPINK */
+
+/* Contenedor principal de cada biografía */
+.biografic {
+    position: relative; /* Añadir posición relativa para el contenedor */
+    background-image: url('../images/bpbio.jpg'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen de fondo */
+    border-radius: 8px;
+    width: 80%; /* Ajusta el ancho a un porcentaje para mejor responsividad */
+    height: 350px;
+    margin: 50px auto; /* Centra el contenedor horizontalmente */
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgb(241, 131, 232);
+    transition: transform 0.3s, background-color 0.3s;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
+    border: none; /* Remueve el borde del botón */
+    display: flex; /* Flexbox para centrar el contenido */
+    align-items: center; /* Centrar verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.biografic:hover {
+    transform: translateY(-5px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* Imagen dentro de cada biografía */
+
+.biografic img {
+    max-width: 110%;
+    border-bottom: 1px solid #ddd; 
+}
+
+.biografic p:last-child {
+    font-weight: bold;
+}
+.biografic h2 {
+    font-size: 2.5rem; /* Tamaño de fuente */
+    color: #ff4be7; /* Rosa oscuro */
+    margin: 1rem 2rem; /* Margen superior e inferior */
+}
+
+/* Estilos de los párrafos de los productos */
+.biografic p {
+    display: block;
+    font-size: 1.5rem;
+    margin: 0.5rem 0; /* Margen superior e inferior */
+    color: #ff49f0; /* Rosa intenso */
+}
+
+.overlay {
+    position: absolute; /* Posición absoluta para superponerse al contenedor */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; 
+    transition: opacity 0.3s;
+    z-index: 1; /* Asegúrate de que el overlay esté por encima del contenido */
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
+}
+
+.biografic:hover .overlay {
+    opacity: 1; 
+}
+
+.border-example {
+    border: 5px solid #ffa6fc;
+    border-radius: 25px 10px 25px 10px;
+    border-style: double;
+    padding: 10px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 15px #ffa6fc;
+}
+.container-icon {
+    width: 1px;
+
+}
+.icono {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.container-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.icono {
+    width: 50px;
+    height: 50px;
+}
+
+.container-icon {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.container-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Estilos para la lista del carrito */
+#cart-list {
+    background-color: #ffa6fc; /* Rosa */
+    border: 5px solid #ffa6fc;
+    border-radius: 25px 10px 25px 10px;
+    border-style: double;
+    color: #000; /* Negro */
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegura que la lista esté sobre otros elementos */
+}
+
+#cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#cart-items li {
+    background-color: #fff;
+    border: 5px solid #ffa6fc;
+    border-radius: 25px 10px 25px 10px;
+    border-style: double;
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#cart-items li button {
+    background-color: #ff69b4; /* Negro */
+    color: #fff;
+    border: none;
+    padding: 2px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#cart-items li button:hover {
+    background-color: #444;
+}
+.button {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    border: 5px solid #fc5ef6;
+    border-radius: 25px 10px 25px 10px;
+    border-style: double;
+    color: #fc5ef6;
+    cursor: pointer;
+}

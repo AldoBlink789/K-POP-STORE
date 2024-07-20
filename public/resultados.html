@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados de Búsqueda</title>
+    <link rel="stylesheet" href="styleindex.css">
+</head>
+<body>
+    <header class="border-example">
+        <h1>K-POP STORE</h1>
+        <div class="search-container">
+            <form id="search-form" action="resultados.html" method="get">
+                <input type="text" id="search-input" name="query" placeholder="Buscar...">
+                <button type="submit">🔍</button>
+            </form>
+        </div>
+        <nav>
+            <ul class="float-container">
+                <li class="float-example border-example"><a href="index.html">Inicio</a></li>
+                <li class="float-example border-example"><a href="bp/BLACKPINK.html">BLACKPINK</a></li>
+                <li class="float-example border-example"><a href="gd/(G)I-DLE.html">(G)I-DLE</a></li>
+                <li class="float-example border-example"><a href="tw/Twice.html">Twice</a></li>
+                <li class="float-example border-example"><a href="bp/sobre nosotros.html">Informacion</a></li>
+                <li class="float-example border-example"><a href="contacto.html">Contacto</a></li>
+                <li class="float-example border-example"><a href="carrusel/carrusel.html">Proximamente...</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="search-results">
+            <div id="product-list"></div> 
+        </section>
+    </main>
+    <footer class="border-example">
+        <p>&copy; 2024 Mi página web. Todos los derechos reservados.</p>
+    </footer>
+    <script src="resultados.js"></script>
+</body>
+</html>
